@@ -15,13 +15,63 @@ body {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.dropping {
+  cursor:
+    url("/IconColorPicker.svg") 2 14,
+    pointer;
 }
 
 #header {
   margin: 16px;
+  display: flex;
+  align-items: center;
+}
+
+#dropper {
+  background-color: #eee;
+}
+
+#header-color {
+  margin-left: 16px;
+  font-family: monospace;
+}
+
+.dropping #dropper {
+  background-color: #ccc;
+}
+
+#canvas-wrapper {
+  margin: 16px;
+  margin-top: 0;
+  position: relative;
 }
 
 #canvas {
-  margin: 16px;
   background-color: #eee;
+  max-width: 100%;
+}
+
+#zoom {
+  --color: #eee;
+  pointer-events: none;
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 999px;
+  box-shadow:
+    0px 0px 0px 2px #fff,
+    inset 0px 0px 0px 8px var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#zoom-color {
+  margin-bottom: 32px;
+  padding: 8px;
+  font-family: monospace;
+  background-color: rgba(255, 255, 255, 0.9);
 }

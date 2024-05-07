@@ -11,9 +11,14 @@
       <button id="dropper">
         <img src="/IconColorPicker.svg" alt="Color Dropper" />
       </button>
-      <div id="color"></div>
+      <div id="header-color"></div>
     </div>
-    <canvas id="canvas" />
+    <div id="canvas-wrapper">
+      <canvas id="canvas"></canvas>
+      <div id="zoom">
+        <div id="zoom-color"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
