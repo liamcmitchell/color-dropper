@@ -37,6 +37,7 @@ body {
 #header-color {
   margin-left: 16px;
   font-family: monospace;
+  min-width: 100px;
 }
 
 .dropping #dropper {
